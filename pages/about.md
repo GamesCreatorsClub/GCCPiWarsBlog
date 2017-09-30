@@ -1,0 +1,1 @@
+<html><body><p>This is Games Creators Club PiWars 2017 blog!</p></body></html>
