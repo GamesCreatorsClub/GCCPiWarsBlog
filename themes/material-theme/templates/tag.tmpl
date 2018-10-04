@@ -39,7 +39,7 @@
 
         <article class="h-entry post-{{ post.meta('type') }}">
         <header>
-            <h1 class="p-name entry-title header"><a href="{{ post.permalink() }}" class="u-url">{{ post.title()|e }}</a></h1>
+            <h1 class="p-name entry-title header{% if post.meta('background-image') %} entry-title-background{% endif %}" {% if post.meta('background-image') %} style="background-image: url({{ post.meta('background-image') }});"{% endif %}>Y<a href="{{ post.permalink() }}" class="u-url">{{ post.title()|e }}</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                     {% if author_avatar %}

@@ -4,7 +4,7 @@
 
 {% macro html_title() %}
 {% if title and not post.meta('hidetitle') %}
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="{{ post.permalink() }}" class="u-url">{{ post.title()|e }}</a></h1><hr/>
+    <h1 class="p-name entry-title{% if post.meta('background-image') %} entry-title-background{% endif %}" itemprop="headline name" {% if post.meta('background-image') %} style="background-image: url({{ post.meta('background-image') }});"{% endif %}><a href="{{ post.permalink() }}" class="u-url">{{ post.title()|e }}</a></h1><hr/>
 {% endif %}
 {% endmacro %}
 
