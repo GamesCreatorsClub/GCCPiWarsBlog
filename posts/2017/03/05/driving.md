@@ -23,7 +23,7 @@ and another similar one for the wheel angles. Using a bit of calculations, you c
 
 Aside of the code, with a bit of cardboard we made our first moving, completely controllable prototype:
 
-https://www.youtube.com/watch?v=_J8mJ6Y7tDs
+{{% media url="https://www.youtube.com/watch?v=_J8mJ6Y7tDs" %}}
 <h1>Now</h1>
 Using pyros, we promoted our 'drive' agent (the program on the rover) to the service that always runs and listens to commands such as: orbit&gt;10,200; which orbits the rover at the speed of 10, around a point that is 200mm in front of the rover.Also, we can turn left or right by adding 90 degrees to the calculated angles so rover can turn around a point to the side of it.
 
@@ -46,4 +46,5 @@ Aside of turning/orbiting we have many other commands that are much more advance
 </ul>
 Here is it in action:
 
-https://www.youtube.com/watch?v=QdfC0HQn_GA</body></html>
+{{% media url="https://www.youtube.com/watch?v=QdfC0HQn_GA" %}}
+</body></html>

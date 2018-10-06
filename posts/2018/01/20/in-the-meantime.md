@@ -8,9 +8,8 @@
 
 Now we have finally our 'secret' weapon ready to be deployed:
 
- 
+ {{% media url="https://www.youtube.com/watch?v=yX7IntLt1zk" %}}
 
-https://www.youtube.com/watch?v=yX7IntLt1zk
 </p><h3>PiNoon</h3>
 <img class="  wp-image-1123 alignright" src="/2018/01/cn5.jpg" alt="cn5" width="174" height="134">
 

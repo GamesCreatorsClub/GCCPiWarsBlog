@@ -36,7 +36,7 @@ First, live test...
 
 ... has successfully passed - with a hamster!
 
-https://www.youtube.com/watch?v=Zrdzv22o52c
+{{% media url="https://www.youtube.com/watch?v=Zrdzv22o52c" %}}
 
 Priming equipment:
 

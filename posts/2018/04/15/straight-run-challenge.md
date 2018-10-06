@@ -26,4 +26,5 @@ rightAngle = int(-controlSteer)
 
 And results were promising. No bananas were (significantly) harmed during filming this video:
 
-https://www.youtube.com/watch?v=R20be1AeP-E</p></body></html>
+{{% media url="https://www.youtube.com/watch?v=R20be1AeP-E" %}}
+</p></body></html>

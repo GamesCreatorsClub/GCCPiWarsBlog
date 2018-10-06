@@ -4,7 +4,7 @@ OpenCV is fun. It looked scary before we tried it but when we did, it turned out
 
 Our rovers were equipped with Raspberry Pi cameras since day one. The idea was to use them for follow the line challenge, for recording and first person driving - none of which really worked well due to lack of time to spend on it. Now, for the <a href="https://piwars.org/2018-competition/challenges/somewhere-over-the-rainbow/">Somewhere Over the Rainbow challenge</a>, we finally made a use of it!
 
-https://www.youtube.com/watch?v=G6VXJVNCVX8
+{{% media url="https://www.youtube.com/watch?v=G6VXJVNCVX8" %}}
 </p><h2>Setting Up the Picture</h2>
 We read a few tutorials online and decided to go with an HSV picture as a base for image analysis. Our rovers have a camera service that delivers 'raw' byte data of an image in RGB format directly from the camera and delivers it to all interested parties over MQTT. That allows us not only to break the code to smaller chunks and make services where code provides access to hardware or software resources, but also to easily implement a monitor of what is really happening to the rover at any time.
 
@@ -34,6 +34,6 @@ The rest is for the main Somewhere Over the Rainbow agent to process the recogni
 
 Here it is when all was put together:
 
-https://www.youtube.com/watch?v=1LdJv2Xz3A8
+{{% media url="https://www.youtube.com/watch?v=1LdJv2Xz3A8" %}}
 
  </body></html>

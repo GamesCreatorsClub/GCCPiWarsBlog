@@ -26,7 +26,7 @@ Next was to put all together: feathering shaft of 250 size Align clone helicopte
 
 Power is 2800KV brushless motor which we still didn't drive a the fastest speed in fear of stripping gears heating would soften the plastic (first prototype was done in PLA). Initial results were phenomenal:
 
-https://www.youtube.com/watch?v=80X3ejnvkLo
+{{% media url="https://www.youtube.com/watch?v=80X3ejnvkLo" %}}
 
 Next was to mount it on to the rover. We kinda rushed this bit...
 
@@ -36,7 +36,7 @@ Picked the biggest servo we have to move whole contraption up and down and quick
 
 Added made adapter for existing nerf gun magazine (only cheat) and feeder driven by a servo:
 
-https://www.youtube.com/watch?v=gPi4gLOHLWU&amp;feature=youtu.be
+{{% media url="https://www.youtube.com/watch?v=gPi4gLOHLWU&amp;feature=youtu.be" %}}
 
 Printed another 'top' for the rover - this time with 0.5mm thicker walls and mounted the whole lot on in:
 
@@ -48,6 +48,6 @@ And as a chery on the cake came the code in our jcontroller service which contro
 
 At least with all above we were able to say: 2 done, 5 more to go!
 
-https://www.youtube.com/watch?v=bTnlL-iox7o
+{{% media url="https://www.youtube.com/watch?v=bTnlL-iox7o" %}}
 
  </p></body></html>

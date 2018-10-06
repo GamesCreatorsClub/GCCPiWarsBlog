@@ -20,4 +20,5 @@ That way our rover can just stick to the left wall, turning to the right, away f
 
 This time the simplicity of algorithm won over all other ideas. Well, unfortunately there are still lots of 'moving' parts and gains and noisiness of distance sensors so we cannot still run through the maze at the full speed. If we had another three-four weeks...
 
-https://www.youtube.com/watch?v=oba4mx1OFuc</body></html>
+{{% media url="https://www.youtube.com/watch?v=oba4mx1OFuc" %}}
+</body></html>

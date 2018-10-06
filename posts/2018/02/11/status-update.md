@@ -8,11 +8,11 @@ Aside of making rovers up and running, we, as you have seen in previous blogs, h
 
 We undertook that task quite seriously:
 
-https://www.youtube.com/watch?v=XHUsOcGC4vE
+{{% media url="https://www.youtube.com/watch?v=XHUsOcGC4vE" %}}
 
-https://www.youtube.com/watch?v=vT-AMMzponE
+{{% media url="https://www.youtube.com/watch?v=vT-AMMzponE" %}}
 
-https://www.youtube.com/watch?v=VbNclTDoOS0
+{{% media url="https://www.youtube.com/watch?v=VbNclTDoOS0" %}}
 
 Aside of having fun bursting each other balloons we had quite a serious task designing new (and secret) controls and special moves:
 

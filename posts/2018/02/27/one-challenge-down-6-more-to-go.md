@@ -24,4 +24,5 @@ Here is the attachment for <a href="http://piwars.org/2018-competition/challenge
 
 With some coding in our joystick controller service we managed to put all quickly together and here it is in the action:
 
-https://www.youtube.com/watch?v=6scma-Ix0f8</p></body></html>
+{{% media url="https://www.youtube.com/watch?v=6scma-Ix0f8" %}}
+</p></body></html>
