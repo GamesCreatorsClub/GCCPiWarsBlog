@@ -7,3 +7,4 @@ output
 .venv
 nikolaserve.pid
 .idea
+**/.DS_Store

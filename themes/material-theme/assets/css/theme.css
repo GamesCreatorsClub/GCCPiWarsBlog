@@ -339,3 +339,8 @@ div.admonition {
     width: 100%;
     color: white;
 }
+
+.entry-content img {
+    width: 100%;
+    height: auto;
+}
