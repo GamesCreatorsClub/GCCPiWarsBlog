@@ -6,14 +6,14 @@ Background-image: /images/rover-holder.jpg
 
 # GCC at PiWars 2018
 
-First apologies for such a delayed post. All the stuff we had to put aside for the PiWars took priority and
-slowly this fall behind. But here we are.
+First apologies for such a delayed post. All the stuff we had to put aside for PiWars took priority and
+this slowly fall behind. But here we are.
 
 ![Our pit](/2018/04/2018-PiWars-Our-pit.jpg){ : style="float:right; width:35%; margine-left:10px;"}
 
-In short summary - we've finished 6th, much lower than hoped, but still it is good reflection of all
-members hard work. With such luck and errors in judgement we could end up being much further down the list.
-But, the most important thing - to have good time getting ready for PiWars and enjoy the even itself
+In short summary - we finished 6th, much lower than excpected, but still it is good reflection of all our
+members' hard work. With such luck and errors in judgement we could end up being much further down the list.
+But, the most important thing - to have good time getting ready for PiWars and enjoyed the event itself
 hasn't been spoiled - on contrary. I am sure that day was equally great as last years and we'll try not
 to miss next. And hopefully we won't!
 
@@ -25,19 +25,19 @@ So, without further ado here's what we did on the day:
 
 ## 10:40 Pi Noon Round 1
 
-Now that was first challenge and quite unlucky one. Our 'test' L shaped pin holding rods were slightly lighter and
+PiNoon was first challenge and quite an unlucky one. Our 'test' L shaped pin holding rods were slightly lighter and
 shorter (2mm instead of 3mm wire and maybe 5cm lower if not more). Previous year we suffered from our rover being
-very short and others were able to 'sneak' from behind and pop our balloons reaching across our rover's body.
-To overcome that we've extended holder for 20mm ahead and thus made it much harder for someone to reach across
+very short and others were able to 'sneak' behind it and pop our balloons reaching across our rover's body.
+To overcome that we've extended the holder for 20mm ahead and thus made it much harder for someone to reach across
 our rover.
 
 Downside was that with heavier and taller balloon holder moved centre of gravity higher (to already too high) and more to the front. Sudden turns would make rover topple over.
 
 ![Rover Toppling Over](/2018/04/Rover-Toppling-Over.jpg "Rover Toppling Over")
 
-Also, I think it is fair to say we were the first ones to pop our own balloons in new course with big tower with
+Also, I think it is fair to say we were the first ones to pop our own balloons in th new course with big tower with
 spikes in the middle. It is sufficient to say it didn't go well for us. Nerves, spikes everywhere, toppling
-rover and we managed to lose from much slower and more shy rover. Better luck next time Naeem!
+rover and we managed to lose to a much slower and more shy rover. Better luck next time Naeem!
 
 ## 11:10 Straight Line Speed Test
 
@@ -46,14 +46,14 @@ where we ended up last!
 
 ![Getting Ready](/2018/04/straight-line-getting-ready.jpg "Getting Ready"){: style="float:right;width:35%;"}
 
-From start it didn't look good. Our rover just swerved to the left - away from the sun. Yes, course was
-on the sun and that was first though: VL53L0X sensors do not like direct sunlight and we were realy hit by
+From start it didn't look good. Our rover just swerved to the left - away from the sun. Yes, the course was
+in sunlight and that was though: VL53L0X sensors do not like direct sunlight and we were realy hit by
 it. But, then it continued to swerve to the left even when it went into part of the course that was in
 the shade. How bizarre. We soldered on and finished it with many, many penalties but at least gave our best.
 
 ![Straight Line](/2018/04/2018-Straight-Line.jpg "Straight Line"){: style="float:clear;width:50%;"}
 
-Oh, last go only fix was to move sensors from 45º/45º to something like 20º/70º and only then it didn't hit
+On the last go only fix was to move sensors from 45º/45º to something like 20º/70º and only then it didn't hit
 the wall immediately. Almost like right sensor was constantly reporting much bigger distances than left.
 And telemetry wasn't really built up to the standard so we didn't get to see any values while attempting
 the challenge. That's probably the first lesson we need to learn from 2018 competition: more feedback!
@@ -94,8 +94,8 @@ distance than it really was. Otherwise - all coloured balls were detected with p
 through corners went exactly as coded.
 
 We even asked judges to give us different set of combinations of
-balls as we were confident that we can solve any combination. Going three times with exactly the same
-combination of colours seemed as a waste of all the effort we did to recognise them correctly.
+balls as we were confident that we could solve any combination. Going three times with exactly the same
+combination of colours seemed a waste of all the effort we did to recognise them correctly.
 
 As we didn't get chance to fine tune PID algorithms that were supposed to make our rover rotate for
 exactly 45º, 90º, 135º and 180º - those turnings and similarly finding right distance from the wall
@@ -122,8 +122,7 @@ lack of) in our absence!
 
 ## 14:15 Minimal Maze
 
-Now - there's another challenge which we though we would ace, almost like we did it last time. Oh,
-last time lack of knowledge of rules and lack of any help from judge lost us a few points - we could
+Now - there's another challenge which we though we would ace, almost like we did it last time. Last time lack of knowledge of rules and lack of any help from judge lost us a few points - we could
 have rescued our rover and had more successful runs than we originally had. This time we were ready
 but at the same time confident that we wouldn't need it at all! Oh, how wrong we were...
 
@@ -233,7 +232,7 @@ effort - it did pay out! Here we have to mention some that helped the team:
 ![Straight Line](/2018/04/straight-line.jpeg "Straight Line"){ : style="float:right;width:35%;"}
 
 Alex who due to exams couldn't join us on the day but was responsible for many
-design decisions, training of our pilots and special rover stand design; 
+design decisions, training of our pilots and special rover stand design;
 
 Mr Kovacs, a teacher from Kenilworth school who helped club through the year and was
 cheering us on the day;
@@ -261,7 +260,8 @@ bits and pieces needed for our rovers, T-shits for the event and 'special rover 
 brilliant students
 
 and last but not least Janina, Naeem and David for making PiWars worth doing,
-if nothign else but just for watching them learn about engineering and programming
+if nothing else just to learn about engineering and programming
 needed for the event like this
 
 and everyone else who contributed to GCC PiWars 2018! Thank you again!
+
