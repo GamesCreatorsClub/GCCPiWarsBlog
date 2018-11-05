@@ -8,10 +8,10 @@ Background-image: /images/rover-holder.jpg
 
 First apologies for such a delayed post. All the stuff we had to put aside for PiWars took priority and
 this slowly fall behind. But here we are.
+![The Team](/2018/04/piwars-2018-team.jpg "The Team"){ : style="margin-bottom:20px;margin-top:10px;"}
+![Our pit](/2018/04/2018-PiWars-Our-pit.jpg){ : style="float:right; width:35%; margin-left:10px;"}
 
-![Our pit](/2018/04/2018-PiWars-Our-pit.jpg){ : style="float:right; width:35%; margine-left:10px;"}
-
-In short summary - we finished 6th, much lower than excpected, but still it is good reflection of all our
+In short summary - we finished 6th, much lower than expected, but still it is good reflection of all our
 members' hard work. With such luck and errors in judgement we could end up being much further down the list.
 But, the most important thing - to have good time getting ready for PiWars and enjoyed the event itself
 hasn't been spoiled - on contrary. I am sure that day was equally great as last years and we'll try not
@@ -209,6 +209,8 @@ where we shouldn't have fallen down.
 
 ## Results:
 
+![Straight Line](/2018/04/piwars-2018-practise.jpg "Straight Line"){ : style="float:left;width:25%;margin-right:30px;"}
+
 But, overall score shows that steady work and perseverance pays off even when
 things didn't go well. If we say that in our view we failed at least 3 or 4
 challenges and still came 6th of 29 teams! That's really good result!
@@ -229,7 +231,7 @@ challenges and still came 6th of 29 teams! That's really good result!
 I would like to use opportunity here to thank to all team members for all the
 effort - it did pay out! Here we have to mention some that helped the team:
 
-![Straight Line](/2018/04/straight-line.jpeg "Straight Line"){ : style="float:right;width:35%;"}
+![Straight Line](/2018/04/straight-line.jpeg "Straight Line"){ : style="float:right;width:35%;margin:20px;"}
 
 Alex who due to exams couldn't join us on the day but was responsible for many
 design decisions, training of our pilots and special rover stand design;
