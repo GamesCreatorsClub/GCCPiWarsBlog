@@ -330,9 +330,9 @@ div.admonition {
     text-align: center;
 
     color: white;
-    text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
-    -moz-text-shadow: 0 0 2px #000;
-    -webkit-text-shadow: 0 0 2px #000;
+    text-shadow: 0 0 6px #000; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 0 0 6px #000;
+    -webkit-text-shadow: 0 0 6px #000;
 }
 
 .entry-title-background a {
