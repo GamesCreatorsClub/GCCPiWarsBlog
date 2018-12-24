@@ -6,10 +6,27 @@ Background-image: /2018/10/confidential.png
 
 # GCC Rover M18 - The Design
 
+Great news! We have been accepted for [PiWars](https://www.piwars.org) 2019 and no less but the Advanced category!
+
+It seems that our ability to make unique design and make rover ready and on time for two competitions
+with (some) success in overall score brought us a place. There were over 150 applications
+and Mike and Tim (the organisers of the PiWars competition) had to pick 30-odd competitors for the first day
+(Schools and Clubs) and similar amount for the second day (Beginners, Intermediate and Advance category competitors).
+So, getting there wasn't a small feat!
+
+
+## The Design
+
+This time we'll try to attempt something which nobody else did before. And it requires lots of engineering
+and programming effort. Also, this time we have extra members to help us with it.
+
+Luckily, some of existing code (and hardware) is at our disposal, so not everything is to be made from scratch.
+
 It is going to be new, different, challenging... It might even deserve a code name this time (hey, team, wake up!)...
 But for now it is just a next rover, next generation rover or simple M18!
 
-## Design Goals
+
+### Design Goals
 
 Here are new design goals:
 
@@ -21,6 +38,8 @@ Here are new design goals:
 - Wheels should be powered with, preferably brushless, motors that can drive wheels so rover moves at the rate of 3.5m/s.
 - Wheels should be able to move motors so rover can move with resolution less than 1cm in each direction.
 - Ideally wheel motors should be able to accelerate rover at the rate of 3.5m/s²
+- 0.9g (9 m/s^2) acceleration would be nice too but maybe rather optimistic
+- Centre of gravity should be as low as possible - less than 40 degrees above the contact points of the wheels
 - It should have flashy lights.
 - It should have sound.
 - It should have a display for funny faces and serious commands and feedback.
@@ -31,7 +50,7 @@ Here are new design goals:
 - It would be really nice all power to the rover to go through 'power controlled' relay so it can be switched off completely programmatically. 
 
 
-## Implementation Ideas
+### Implementation Ideas
 
 And here is how some of them can be done:
 
@@ -57,7 +76,7 @@ one or more Raspberry Pi Zeros in USB/Ethernet gadget mode
 - Rover is to be powered by 2S or 3S LiPo battery (of at least 1000mAh capacity - preferably 2000mAh or more)
 
 
-## Plans B
+### Plans B
 
 ... and C and others...
 
@@ -70,7 +89,7 @@ More then one item from above might not work 100%. Here are some thoughts of Pla
 - If ToF sensors are slow then they can be replaced with 'fast' ultrasonic sensors or supplemented by some. Extra board (ATmega328 again) should be used in that case
 
 
-## Software
+### Software
 
 Aside of existing [Pyros](https://github.com/GamesCreatorsClub/GCC-Rover/tree/master/pyros "PyROS") software, there are some aspirations we would like to achieve in the code:
 
@@ -81,6 +100,7 @@ Aside of existing [Pyros](https://github.com/GamesCreatorsClub/GCC-Rover/tree/ma
 - Ability to 'record' positions and paths through the time
 - Ability to smartly (still miss unexpected obstacles) replay recorded route
 
+![New Rover Prototype](/2018/10/pixelised-rover.png "New Rover Prototype")
 
 ## Conclusion
 
