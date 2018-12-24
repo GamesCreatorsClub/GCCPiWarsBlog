@@ -8,9 +8,9 @@ Background-image: /2018/10/confidential.png
 
 ![PiWars](/images/piwars-logo-small.png "PiWars"){ : style="float:left;width:25%;margin-right:30px;"}
 
-Great news! We have been accepted for [PiWars](https://www.piwars.org) 2019 and no less but the Advanced category!
+Great news! We have been accepted for [PiWars](https://www.piwars.org) 2019 and in nothing other than the Advanced category!
 
-It seems that our ability to make unique design and make rover ready and on time for two competitions
+It seems that our ability to make unique designs and make a rover ready and on time for two competitions
 with (some) success in overall score brought us a place. There were over 150 applications
 and Mike and Tim (the organisers of the PiWars competition) had to pick 30-odd competitors for the first day
 (Schools and Clubs) and similar amount for the second day (Beginners, Intermediate and Advance category competitors).
@@ -22,7 +22,7 @@ So, getting there wasn't a small feat!
 This time we'll try to attempt something which nobody else did before. And it requires lots of engineering
 and programming effort. Also, this time we have extra members to help us with it.
 
-Luckily, some of existing code (and hardware) is at our disposal, so not everything is to be made from scratch.
+Luckily, some of our existing code (and hardware) is at our disposal, so not everything has to be made from scratch.
 
 It is going to be new, different, challenging... It might even deserve a code name this time (hey, team, wake up!)...
 But for now it is just a next rover, next generation rover or simple M18!
@@ -38,7 +38,7 @@ Here are new design goals:
 - Wheels should have absolute positioning on them.
 - Wheel steering should be absolutely positioned as well.
 - Wheels should be powered with, preferably brushless, motors that can drive wheels so rover moves at the rate of 3.5m/s.
-- Wheels should be able to move motors so rover can move with resolution less than 1cm in each direction.
+- Wheels should be able to move motors so rover can move with a resolution less than 1cm in each direction.
 - Ideally wheel motors should be able to accelerate rover at the rate of 3.5m/s²
 - 0.9g (9 m/s^2) acceleration would be nice too but maybe rather optimistic
 - Centre of gravity should be as low as possible - less than 40 degrees above the contact points of the wheels
@@ -70,7 +70,7 @@ And here is how some of them can be done:
 - Each wheel hub's steering motor should be driven by one channel of a dual H bridge (4 motors - two dual H bridges)
 - Each wheel hub should have magnet which is read by stationary contactless potentiometer
 - As four contactless potentiometers are needed and they are communicating with i²c interface on one fixed address there's a need of 4 way i²c multiplexer
-- Each side of the rover will have distance sensor (preferably ToF)
+- Each side of the rover will have a distance sensor (preferably ToF)
 - Rover will have 9dof sensor (accelerometer, gyro and compass)
 - Rover will use any other possible means for determining precise location and orientation
 - If needed more than one Raspberry Pi will be networked together use USB: Raspberry Pi 3B (or 3B+) to be used as main and
@@ -78,13 +78,13 @@ one or more Raspberry Pi Zeros in USB/Ethernet gadget mode
 - Rover is to be powered by 2S or 3S LiPo battery (of at least 1000mAh capacity - preferably 2000mAh or more)
 
 
-### Plans B
+### Plan Bs
 
-... and C and others...
+... and Cs and others...
 
-More then one item from above might not work 100%. Here are some thoughts of Plan B scenarios:
+More than one item above might not work. Here are some thoughts of Plan B scenarios:
 
-- If gimbal brushless motor cannot deliver required speed then it can be replaced by 'ordinary' brushless motor. Or as plan C with brushed motor that fits wheel hub's envelope.
+- If a gimbal brushless motor cannot deliver required speed then it can be replaced by 'ordinary' brushless motor. Or as plan C with brushed motor that fits wheel hub's envelope.
 - If copper strips and brushes do not work appropriate battery is to be sourced and placed inside of the hub (increasing its weight so speed of turning can be affected)
 - If small brushed motors cannot turn hub or turn it quickly enough they can be replaced with bigger brushed motors or appropriate brushless motors driven by brushless ESCs
 - If wheel brushless motor has to be replaced with brushed motor for inside of wheel hub, then homebrew brushless controller can be replaced with dual H bridge breakout board (where both 'channels' are connected together)
