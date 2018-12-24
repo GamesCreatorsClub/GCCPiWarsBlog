@@ -6,6 +6,8 @@ Background-image: /2018/10/confidential.png
 
 # GCC Rover M18 - The Design
 
+![PiWars](/images/piwars-logo-small.png "PiWars"){ : style="float:left;width:25%;margin-right:30px;"}
+
 Great news! We have been accepted for [PiWars](https://www.piwars.org) 2019 and no less but the Advanced category!
 
 It seems that our ability to make unique design and make rover ready and on time for two competitions
