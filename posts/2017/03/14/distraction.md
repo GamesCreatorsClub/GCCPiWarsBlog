@@ -1,7 +1,7 @@
 <html><body><p>Three weeks to go and so many things to do... and yet, making mistakes like getting a PS2 controller instead of a PS3 (USB) version just a few days before the Raspberry Pi Zero W has out turned out to be unforgivable. Unforgivable at least time wise.
 
 Those two (the PS2/3 controller and the PiZero W) are just perfect pair, especially if accompanied with a 128x64 i2c OLED and Adafruit's power boost. They all begged to be put together just a week or so. We had a small misjudgement of how long it was going to take and a couple of hours (or more) ended up being the whole weekend. But here it is:<img class="alignnone size-full wp-image-730" src="/2017/03/complete-1.jpg" alt="complete-1.jpg" width="1280" height="924">
-
+<!-- TEASER_END -->
 The main component is a PiZero W configured to automatically connect to our WiFi access point (a Raspberry Pi in a green box). It is embedded into the controller itself with a bolted display on top of it so we can can select which rover to control, check if everything is  connected and show the state of the battery. Making sure the battery runs too low is really important as Adafruit's power booster is planted so deep inside the controller that its LEDs are not visible from the outside. That was the hardest part.
 
 Anyway, lets go through it in the order it was put together:<img class="  wp-image-590 aligncenter" src="/2017/03/pizero-can-fit.jpg" alt="pizero-can-fit.jpg" width="678" height="509">The first question was <em>'can the PiZero be fitted inside?'</em> - just below the controller's PCB. And even though it is quite a tight fit and it protruding 1mm it at the back it was just the right size. Width wise at least. For the depth - some cables needed to be twisted in and back.

@@ -1,7 +1,7 @@
 <html><body><p>Rovers work no matter what the 'client' side apps look like, right?
 </p><h2>PyROS Clients and Agents</h2>
 <a href="https://github.com/GamesCreatorsClub/GCC-Rover/tree/master/pyros">PyROS</a> (Python Rover Operating System) is, in essence, simple Linux service that starts one Python program which listens to particular topics on MQTT (local queue broker). The client (computer or laptop) program communicates with Rover's code by the same MQTT that sends instructions to that Python program (imaginatively called just PyROS). The most important command clients can send to the PyROS is to upload a whole Python code (file with file extension '.py' - a Python program). There is set of command line tools (pyros) that can do various things to the rover - upload program/service/agent, query what is running on the rover, start/stop program/service/agent, check stdout (read logs), etc..
-
+<!-- TEASER_END -->
 PyROS 'recognises' three types of programs: services, programs and agents. Services are maintained by PyROS and the service programs are started by PyROS at start up and kept running all the time. The most important services on our rovers are:
 <ul>
 	<li>wheels - driving servos and motors individual wheels</li>

@@ -27,6 +27,7 @@ Luckily, some of our existing code (and hardware) is at our disposal, so not eve
 It is going to be new, different, challenging... It might even deserve a code name this time (hey, team, wake up!)...
 But for now it is just a next rover, next generation rover or simple M18!
 
+<!-- TEASER_END -->
 
 ### Design Goals
 

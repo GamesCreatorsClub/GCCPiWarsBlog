@@ -3,6 +3,7 @@
 <img class="alignnone size-full wp-image-1196" src="/2018/02/threerovers1.png" alt="ThreeRovers1" width="1280" height="542">
 
 Rovers themselves turned to be really great source of fun and idea of having three for the club worked quite well. That magic number allowed us to have always one spare, one with better motors, one with the latest software (before it was replicated to the others), one with bigger wheels, one we like the best, one that always got one wire to the motor unsoldered somehow, one that had connector wires somehow shorter and harder to use than others, one with broken motor, etc...
+<!-- TEASER_END -->
 
 At one point only one SD card was really working and then cloned three times. After all, for SF fans: <a href="https://en.wikipedia.org/wiki/Rendezvous_with_Rama">"<span class="Y0NH2b CLPzrc">The Ramans do everything in threes</span>"</a>
 

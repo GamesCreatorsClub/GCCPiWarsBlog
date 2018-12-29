@@ -3,7 +3,7 @@
 <img class="alignnone size-full wp-image-1149" src="/2018/01/rover-batteries.png" alt="rover-batteries" width="1280" height="960">
 </p><h2 class="western">LiPo Batteries</h2>
 Our rover uses batteries that are two cell (nominally 7.4V) Lithium Polymer batteries. They provide quite a strong current and thus they are very dangerous if shorted. A short would generate high heat and can even cause the battery to explode.
-
+<!-- TEASER_END -->
 <img class="alignnone size-full wp-image-1147" src="/2018/01/all-batteries.png" alt="all-batteries" width="1280" height="960">
 <h3 class="western">Charging</h3>
 Batteries are charged using the ‘LiPo Balanced’ option on the charger. The voltage is 7.4V (two cells) and the current needs to be set between 1A and 2A.<strong> The batteries we have shouldn’t be charged with stronger current than 2A as it can damage them</strong>. Our batteries are 2100mAh with a ‘C’ rating that is calculated by dividing that number by 1000 (2.1A in our case). Normally batteries are charged at around 1 C and the batteries we have can provide up to 25C as per manufacturer’s description. When that is multiplied with 2.1A it comes up to them being capable of providing to ~50A of continual current. Fortunately our rovers do not ‘consume’ more than 1A up to 2 or 3A at peaks. That allows our batteries to last much longer between charges.

@@ -4,7 +4,7 @@ But was that necessarily a bad thing? So far it seems that at least half of the 
 
 Now we are at quite a few new designs. One of the first we did was PiNoon capture nut (ahm, electric connector) and with distance sensor (<a href="http://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html">VL53L0X</a>). One of the previous blogs was about capturing stuff in 3D printer objects.
 
- 
+ <!-- TEASER_END -->
 
 <img class="  wp-image-1178 alignleft" src="/2018/02/calibrationwheel.png" alt="CalibrationWheel" width="142" height="128"><img class="  wp-image-1170 alignright" src="/2018/02/calibrationwheelprinted.png" alt="CalibrationWheelPrinted" width="159" height="128">Next was a wheel to help us calibrate the (non load) speed of the motors. It is half filled in and half 10mm indented - an attempt to use same distance sensor for calibrating speed of the wheel. The idea is to put the sensor at some close range (10-20mm) and spin the wheel, counting how many times a second it measured the shorter distance to longer distance. Its target speed can be 120RPM, which is 2 times a second - and the default VL53L0X 'time allowance' is 33ms, we should be able to do 30 samples of which 15 should be shorter distance and 15 longer. The software for it is still pending.
 </p><h3>Two Distance Sensors Holder</h3>

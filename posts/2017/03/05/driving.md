@@ -8,7 +8,7 @@ To drive our rover, we created a program that used mqtt messages to send servo s
     wheelDeg("br", 60.0)</pre>
 </blockquote>
 In the mean time we had introduced wheels service. Service that will control appropriate servos depending on which angle we want each wheel to be at and at which speed we would like to drive the wheel at.
-
+<!-- TEASER_END -->
 This was okay, but it meant that we had to send the details for every individual wheel, all the time. Then came agents, which really helped with this problem. An agent is a program sent to the rover that sits and waits for a small messages from the client and communicates with other services. Since both agent and services are on the same Raspberry Pi their communication is quick even if there are many messages to be exchanged like setting up wheel positions and speeds for all the wheels all the time.
 
 The drive agent was listening for messages like: drive &gt; forward; and sent messages for the wheels to turn to the right angle and drive at said speed. This made everything run much faster because we didn't need to constantly send many, bigger, messages from a controller (a laptop in this case) to the rover, which took up a lot of data traffic over the, somehow constrained, WiFi. Also, it would increase latency between user input and rover reacting.

@@ -3,7 +3,7 @@
 One of the options we are exploring for our rover to find its position is with a distance sensor. Last time we went with single <a href="http://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html">VL53L0X</a> attached to a servo. The idea was that moving it around from -90º to 90º we could scan the rover's surroundings and make decisions. And it worked.
 
 {{% media url="https://www.youtube.com/watch?v=Hwwsh7aNXWM" %}}
-
+<!-- TEASER_END -->
 We were able to go through the maze relatively quickly, but observing other competitors we've noticed that those that had 2 or even better 3 distance sensors were able to move much quicker as their position relative to edges and end of the corridor were relayed at the same time. So, this time we decided to have two distance sensors. The original idea was to use ultrasonic sensors (<a href="http://www.micropik.com/PDF/HCSR04.pdf">HC SR04</a>) and a breakout board with a ATmega328p connected to the RPi with i2c; More about it in one of the following blogs. In the mean time, until our i2c solution is finished, we've created plan B solution - two VL53L0X sensors on the same i2c bus. Here's the physical design of the holder <a href="https://gccpiwars.wordpress.com/2018/02/10/prototyping/#TwoDistanceSensorsHolder">Prototyping</a>.
 
 But adding two VL53L0X on the same i2c bus is not a simple thing. Unlike many i2c devices, VL53L0X doesn't have a selectable i2c address (usually jumps on the board). It uses separate pins for a logical 'enable' (or in this case 'disable'). Pin XSHUT needs to be set to logical '1' for the sensor to use i2c bus. Internally, it has a pull-up resistor so if not connected it will still work. Setting XSHUT to logical '0' (GND in our case) makes it disabled.

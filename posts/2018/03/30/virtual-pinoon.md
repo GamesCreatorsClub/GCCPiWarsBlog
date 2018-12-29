@@ -3,7 +3,7 @@
 <a href="http://www.unleadedsnail.com/piwars/">GCC Virtual Rover PiNoon</a>!
 
 <a href="http://www.unleadedsnail.com/piwars/"><img class="alignnone size-full wp-image-1261" src="/2018/03/piwars1.png" alt="piwars" width="892" height="708"></a>
-
+<!-- TEASER_END -->
 Click on above image to try out virtual PiNoon with our rovers!! Keys are:
 </p><ul>
 	<li>'ASDW' for movement and 'Q' and 'E' for rotation of the green rover</li>

@@ -1,7 +1,7 @@
 <html><body><p>YAY!!! We came second! Saturday was great. We need to thank everyone who supported us and helped us to design and build rovers and special thanks to Mike and Tim and all the judges for organising such a fun event and great competition.
 
 <img class="alignnone size-full wp-image-1030" src="/2017/04/back-in-hq.jpg" alt="back-in-hq" width="1280" height="960"> Getting ready for the challenges
-
+<!-- TEASER_END -->
 Also big thank you to our sponsors - <a href="http://creative-sphere.com/">Creative Sphere</a>, <a href="http://www.vectric.com/">Vectric</a> and <a href="https://www.blackpepper.co.uk/">BlackPepper</a> for providing parts for the rovers.
 
 <a href="http://creative-sphere.com/"><img class="  wp-image-864 alignnone" src="/2017/03/creative-sphere.png" alt="creative-sphere" width="176" height="142"></a>     <a href="http://www.vectric.com/"><img class="  wp-image-876 alignnone" src="/2017/03/vectric-logo.png" alt="vectric-logo" width="196" height="152"></a>        <a href="https://www.blackpepper.co.uk/"><img class="  wp-image-869 alignnone" src="/2017/03/blackpepperlogo.jpg" alt="BlackPepperLogo" width="249" height="187"></a>

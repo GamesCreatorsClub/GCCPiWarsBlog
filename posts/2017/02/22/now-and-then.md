@@ -5,7 +5,7 @@ The rover needs wheels. The rover needs motors. The rover needs to steer. For mo
 So, behold a complete GCC rover wheel:<img class="alignnone size-full wp-image-68" src="/2017/02/wheel1.jpg" alt="wheel1..jpg" width="1280" height="720">Also, wheels need tyres:
 
 <img class="alignnone  wp-image-78" src="/2017/02/wheel3.jpg" alt="wheel3..jpg" width="312" height="217">
-
+<!-- TEASER_END -->
 (Printing with a flexible material like ninjaflex is not easy job)
 
 Here is complete wheel:<img class="alignnone size-full wp-image-77" src="/2017/02/wheel2.jpg" alt="wheel2..jpg" width="1164" height="1280">

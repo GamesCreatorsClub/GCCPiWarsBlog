@@ -1,7 +1,7 @@
 <html><body><p>We were quite busy last few weeks. Our first priority was to make sure all rovers are operational. Motor swaps, new wheels, and other minor repairs where needed since last PiWars. And now - all three are updated to the latest spec and even upgraded. Last rover got MPU9250 9 axis gyro/accelerometer/compass breakout board and all got extra pin provided at our 'i2c' bus. Now not only we have GND, VCC (3.3V), SDA and SCL on the cable for attachments, but extra GPIO - GPIO 4 which, in theory, can dub as One Wire Interface, too. Currently that pins purpose is to select between two VL53L0X sensors.
 
 <img class="alignnone size-full wp-image-1196" src="/2018/02/threerovers1.png" alt="ThreeRovers1" width="1280" height="542">
-
+<!-- TEASER_END -->
 Aside of making rovers up and running, we, as you have seen in previous blogs, have undergone another major change - switched from WiFi/TCP/MTQQ communication with the rover to Bluetooth directly to the rover. Now two rovers can be controlled remotely (previously we would be using a computer with wired game controller) - one with old style MQTT communication and another with PS3 game controller. That allowed us to start practising where we lost in final of one of the challenges: PiNoon.
 
 <img class="alignnone size-full wp-image-1192" src="/2018/02/pinoon-3.png" alt="PiNoon-3" width="1280" height="970">

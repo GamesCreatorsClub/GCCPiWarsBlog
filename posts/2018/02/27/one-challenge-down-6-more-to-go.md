@@ -1,7 +1,7 @@
 <html><body><p>Last year our attempt at <a href="http://piwars.org/2018-competition/challenges/slightly-deranged-golf/">Slightly Deranged Golf</a> with a 'kicker' didn't go the way we expected it. The best go was when we tucked the golf ball under the 'kicker':
 
 <img class="alignnone size-full wp-image-1240" src="/2018/02/last-year.png" alt="last-year" width="578" height="426">
-
+<!-- TEASER_END -->
 Also, it seemed that the best results others achieved were when they had some way of 'capturing' the ball.
 
 The design idea for this year was simple:

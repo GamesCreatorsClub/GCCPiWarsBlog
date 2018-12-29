@@ -8,7 +8,7 @@ Background-image: /images/rover-holder.jpg
 
 First apologies for such a delayed post. All the stuff we had to put aside for PiWars took priority and
 this slowly fall behind. But here we are.
-![The Team](/2018/04/piwars-2018-team.jpg "The Team"){ : style="margin-bottom:20px;margin-top:10px;"}
+![The Team](/2018/04/piwars-2018-team.jpg "The Team"){ : style="margin-bottom:20px;margin-top:10px;width:100%; "}
 ![Our pit](/2018/04/2018-PiWars-Our-pit.jpg){ : style="float:right; width:35%; margin-left:10px;"}
 
 In short summary - we finished 6th, much lower than expected, but still it is good reflection of all our

@@ -5,7 +5,7 @@
 So, this year we are planning to cut the corner, and connect a controller directly to the rover.
 
 <img class="  wp-image-1165 aligncenter" src="/2018/02/piwarscontrollersetupnew.png" alt="PiWarsControllerSetupNew" width="385" height="299">
-
+<!-- TEASER_END -->
 The way we will do this is with a (knockoff) PS3 controller, connected via Bluetooth to the rover. This is way better because there would be far less points in the packets route, and because its more direct, it should have a shorter travel time, meaning less delay. Also, there is no three way acknowledgement TCP robustness relies on. YAY!
 
 <img class="  wp-image-1164 aligncenter" src="/2018/02/piwarscontrollersetupoldsoftware.png" alt="PiWarsControllerSetupOldSoftware" width="440" height="247">

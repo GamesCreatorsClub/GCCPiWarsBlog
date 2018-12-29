@@ -1,7 +1,7 @@
 <html><body><a href="https://piwars.org/2018-competition/challenges/the-minimal-maze/">The Minimal Maze</a> challenge was one we did first last year, ahead of all other competitors, on the day last year and in two goes we did relatively well. Of two goes one was clean run and one was abandoned due forgetting the rules in our excitement (we could have saved it and lost some points but score much more).
 
 This year we left the preparation for the challenge as last. And you'll understand in a minute why!
-
+<!-- TEASER_END -->
 Previously we did it using one ToF sensor (VL53L0X) attached to the servo and starting at 45º to left. The idea was to scan distance from the side and front. And it worked well - rover was going through the corners quite nicely (aside of occasional overshooting or crashing straight on). It was funny watching it avoid the walls at the last possible moment! When the sensor is to detect a sudden opening in the left wall, it would switch to three steps:
 <ol>
 	<li>turn sensor to 90º - directly to the wall and wait it pass past rover</li>

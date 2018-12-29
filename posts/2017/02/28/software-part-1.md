@@ -1,6 +1,6 @@
 <html><body><h2>Then</h2>
 When all servos and motor controllers (that are to be commended as servos) were wired, we needed a way to control them in the software. Luckily, Raspberry Pi has brilliant piece of software called '<a href="https://github.com/richardghirst/PiBits/tree/master/ServoBlaster">servoblaster</a>' (<a href="https://github.com/richardghirst/PiBits/tree/master/ServoBlaster">open source project on the github</a>) which utilizes internal DMA timers for generating precise PWM they way the servos need. Also, it pretends to be a device by creating a pipe file called /dev/servoblaster which acts as simple interface with the 'outside' world. All that is needed,  is for someone to a send line of text in format "&lt;servo_number&gt;=&lt;position&gt;" and servoblaster will move a particular servo to the position. The servos are numbered 0, 1, 2... and in /etc/init.d/servoblaster file we can define OPTS environment variable with "--p1pins=&lt;comma delimited list of GPIO pins&gt;" to link between ordinary number and GPIO pin. GPIO pin numbers correspond to physical pins which makes it even simpler. The servo position is the width of the signal in tens of microseconds, so, 150 corresponds to 1.5ms (1500 micro seconds) which is mid point of servos.
-
+<!-- TEASER_END -->
 We decided to numerate the servos like this:
 <ul>
 	<li>servo 0 -&gt; front right motor controller</li>

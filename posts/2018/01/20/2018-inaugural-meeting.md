@@ -1,7 +1,7 @@
 <html><body><p>This time we are starting very late due to many independent factors, but our resolve never faltered. Fortunately we finished quite strong last year - with two fully working rovers. However one lagged because it was built first and not upgraded completely. We only had very little damage, mainly on some attachments (broken servos mostly) and some of these we aren't going to need this year.
 
 The only area, though, was that we didn't do as much as possible with software! Who would tell - given we're really a software club. Eh.
-
+<!-- TEASER_END -->
 Anyway, on our first meeting we went through all challenges and seeing what we had, and what we'll need to do to successfully complete them:
 </p><ul>
 	<li>Straight-Line Speed Test - we need new a distance sensor configuration and new software</li>

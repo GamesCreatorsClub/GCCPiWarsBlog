@@ -2,7 +2,7 @@
 The main interface between the wheels (as pictured in the previous post) and the Raspberry Pi are GPIOs configured to drive <a href="https://en.wikipedia.org/wiki/Servo_control">RC standard servos</a> - PWM with duty cycle of 1ms (*) for a full left position and 2ms for a full right position for the 'on' part of the cycle and rest of it filled to 20ms (50 times a second) for the 'off' or '0' part of the cycle. That leaves 1.5ms for the center.
 
 (*) modern servos work with far greater range - easily from 0.6ms to 2.4ms and beyond - turning far more than just 180º.
-
+<!-- TEASER_END -->
 Each wheel consists of a servo and motor driven by an RC brushless motor controller like this <a href="http://www.ebay.co.uk/itm/272384895388">one</a>. Such controllers are usually called ESCs (electronic speed controllers). Since servos are not tiny HXT900 or similar and they all can move at the same time and, on the other hand, motor controllers do provide some BEC (battery eliminating circuit), so the idea was to wire each motor controller's BEC output to one servo - same wheel's servo.
 
 That requires a power source (fancy term for battery) to be distributed in five ways: four motors and the Raspberry Pi itself:

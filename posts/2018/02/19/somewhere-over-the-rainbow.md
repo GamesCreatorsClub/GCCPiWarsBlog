@@ -15,7 +15,7 @@ Art Attach PVA glue - kids had grown up sufficiently not to notice half is missi
 Total: £33.32 (£39.32 - with second coat of paint)
 
 Start of the build:
-
+<!-- TEASER_END -->
 [gallery ids="1215,1216" type="rectangular"]
 
 Ready for carrying it around:

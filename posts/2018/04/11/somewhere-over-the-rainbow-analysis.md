@@ -6,6 +6,7 @@
 	<li>follow left or right wall of the arena to an adjacent corner</li>
 </ul>
 <img class="alignnone size-full wp-image-1287" src="/2018/04/sotr-analysis.jpg" alt="sotr-analysis" width="1280" height="960">
+<!-- TEASER_END -->
 <h2>Turning around</h2>
 In Somewhere Over the Rainbow there are several precise angles that the rover should turn:
 <ul>

@@ -5,7 +5,7 @@
 <img class="alignnone  wp-image-1133" src="/2018/01/servo-arms-1-1.jpg" alt="servo-arms-1.1" width="223" height="240">   <img class="alignnone  wp-image-1134" src="/2018/01/servo-arms-11.jpg" alt="servo-arms-1" width="434" height="240">
 
 <img class="alignnone  wp-image-1130" src="/2018/01/servo-arms-2.jpg" alt="servo-arms-2" width="668" height="501">
-
+<!-- TEASER_END -->
 Now we have finally our 'secret' weapon ready to be deployed:
 
  {{% media url="https://www.youtube.com/watch?v=yX7IntLt1zk" %}}

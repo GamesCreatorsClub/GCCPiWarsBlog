@@ -1,7 +1,7 @@
 <html><body><p> 
 
 OpenCV is fun. It looked scary before we tried it but when we did, it turned out to be much easier than we anticipated. Shame we didn't start with it sooner (and by sooner I mean for last year's competition).
-
+<!-- TEASER_END -->
 Our rovers were equipped with Raspberry Pi cameras since day one. The idea was to use them for follow the line challenge, for recording and first person driving - none of which really worked well due to lack of time to spend on it. Now, for the <a href="https://piwars.org/2018-competition/challenges/somewhere-over-the-rainbow/">Somewhere Over the Rainbow challenge</a>, we finally made a use of it!
 
 {{% media url="https://www.youtube.com/watch?v=G6VXJVNCVX8" %}}

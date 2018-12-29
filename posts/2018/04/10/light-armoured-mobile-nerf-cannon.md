@@ -5,7 +5,7 @@ Finally got a short break between tinkering with OpenCV, complaining about senso
 We started with and with very limited knowledge about Nerf guns. The only thing that was provided for the club were five packs of Nerf darts so we had some idea of the size we needed.
 
 The idea was to have two concave cylinders with gears on bottom and a grove on the other so some kind of belt (elastic band) can be used to turn them). <img class="alignnone size-full wp-image-1201" src="/2018/02/gun-1.png" alt="gun-1" width="1280" height="817">
-
+<!-- TEASER_END -->
 The nerf dart would be somehow delivered in between two spinning cylinders and would be then propelled forward through the barrel. We started with designing a concave cylinder in Sketchup first as it seemed to be hardest challenge of all. Fortunately it wasn't half as hard as we thought.
 
 Next was to create a gear at the bottom of the cylinder. There even was a simple gear making plugin for Sketchup available. It turned out to be slightly a longer exercise as one of the options was to use RC brushless motor (with ESC to drive it) with existing pinion. That  pinion's gears are standard gears with MOD of 0.5. This made us have to learn about engineering and gears a bit so we don't end up stripping the teeth on our 3D printed gears. Even half a millimetre discrepancy would be disastrous.
