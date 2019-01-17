@@ -29,7 +29,7 @@ More about that in this really nice [master thesis of Mattia Tosi](http://tesi.c
 
 ## Slip Ring
 
-So, alternative is to make our own slip ring then. Since top of the wheel is taken for button magnet, we can position slip rings around the wheel - in same axis as main, big bearing is sitting. So, the plan is to make two copper strips that go around the wheel hub and use existing brush motor brushes to deliver plus and minus terminals of battery to inside of the wheel hub. We started with 3mm wide and 0.3mm thick slug repellent self adhesive tape. But, on the second thought 0.3mm thick tape is going to be quite thin and possibly rip on the excessive use. Next, slightly more robust solution is 4mm wide and 1mm thick copper plates ordered from the ebay. 1mm thickness is going to ensure life time endurance and Bosh brushes (the cheapest, smallest sold on the ebay again) are 4mm thick anyway so they seemed as a good match.
+So, the alternative is to make our own slip ring then. Since top of the wheel is taken for button magnet, we can position slip rings around the wheel - in same axis as main, big bearing is sitting. So, the plan is to make two copper strips that go around the wheel hub and use existing brush motor brushes to deliver plus and minus terminals of battery to inside of the wheel hub. We started with 3mm wide and 0.3mm thick slug repellent self adhesive tape. But, on the second thought 0.3mm thick tape is going to be quite thin and possibly rip on the excessive use. Next, slightly more robust solution is 4mm wide and 1mm thick copper plates ordered from the ebay. 1mm thickness is going to ensure life time endurance and Bosh brushes (the cheapest, smallest sold on the ebay again) are 4mm thick anyway so they seemed as a good match.
 
 Design is like follow:
 
@@ -39,4 +39,4 @@ When printed it looks like this:
 
 ![Printed Wheel Hub](/2018/10/printed-wheel-hub.jpg "Printed Wheel Hub"){ : style="margin-bottom:20px;margin-top:10px;width:100%;"}
 
-Now, internal tabs are going to be connected to motor controller (H bridge of some kind) for power and to voltage regulator for ATmega controller, nRF24L01 transceiver for communication to RPi and AS5600 as wheel's "rotary encoder" sensor...
+Now, the internal tabs are going to be connected to motor controller (H bridge of some kind) for power and to voltage regulator for ATmega controller, nRF24L01 transceiver for communication to RPi and AS5600 as a wheel's "rotary encoder" sensor...

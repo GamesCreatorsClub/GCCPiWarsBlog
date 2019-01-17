@@ -6,21 +6,21 @@ Background-image: /2018/10/gimbal-brushless.jpg
 
 # Brushless Motor Controller
 
-Moving rover is the most important thing followed only by the ability to steer and control it. Our idea is to use gimbal brushless motors (like [these](https://hobbyking.com/en_us/2804-210kv-brushless-gimbal-motor-ideal-for-gopro-to-compact-style-cameras.html)) in the wheel hubs to the drive rover. Brushless motors are quite fast which helps a lot, but also as ones we selected are gimbal motors they are supposed to be able to move very precisely for minute changes in camera movements.
+Moving rover is the most important thing followed only by the ability to steer and control it. Our idea is to use gimbal brushless motors (like [these](https://hobbyking.com/en_us/2804-210kv-brushless-gimbal-motor-ideal-for-gopro-to-compact-style-cameras.html)) in the wheel hubs to the drive rover. Brushless motors are quite fast which helps a lot, but also the ones we selected are gimbal motors they are supposed to be able to move very precisely for minute changes in camera movements.
 
-Idea was to start with something like [BLheli programmable ESCs](https://hobbyking.com/en_us/turnigy-multistar-blheli-32-arm-32bit-21a-2g-race-spec-esc-2-4s-opto.html) but the software inside of them wasn't good enough to drive them slowly. Normally drone ESCs (Electronic Speed Controllers) are made for fine control of speed when props are already rotating quite quickly.
+The idea was to start with something like [BLheli programmable ESCs](https://hobbyking.com/en_us/turnigy-multistar-blheli-32-arm-32bit-21a-2g-race-spec-esc-2-4s-opto.html) but the software inside of them wasn't good enough to drive them slowly. Normally drone ESCs (Electronic Speed Controllers) are made for fine control of speed when props are already rotating quite quickly.
 
-So, the other option was to make homebrew brushless controller like this: [Spining BLDC(Gimbal) motors at super slooooooow speeds with Arduino and L6234](http://www.berryjam.eu/2015/04/driving-bldc-gimbals-at-super-slow-speeds-with-arduino/). That particular article was the main inspiration - especially as ATmega chips with nRF24L01 are the original idea to sit in side of wheels and drive each wheel. Quite an exciting little side-project...
+So, the other option was to make a homebrew brushless controller like this: [Spining BLDC(Gimbal) motors at super slooooooow speeds with Arduino and L6234](http://www.berryjam.eu/2015/04/driving-bldc-gimbals-at-super-slow-speeds-with-arduino/). That particular article was the main inspiration - especially as ATmega chips with nRF24L01 were the original idea to sit in side of wheels and drive each wheel. Quite an exciting little side-project...
 
 <!-- TEASER_END -->
 
-So, the controller is going to be chip L6234 - three phase motor driver with 5A peak current through it. The original rover had four motors that each has a stall current at around 800-900mAh. With the rover that might now be twice the weight it shouldn't really go over twice that, so 5 amps seems quite sufficient.
+So, the controller is going to be the L6234 chip - three phase motor drivers with a 5A peak current through it. The original rover had four motors that each has a stall current at around 800-900mAh. With the rover that might now be twice the weight it shouldn't really go over twice that, so 5 amps seems quite sufficient.
 
 ## Moving Motor
 
 ![Brushless at club](/2018/10/brushless-rig-at-club.jpg "Brushless at club")
 
-To start with homebrew brushless ESC we decided to use Raspberry Pi for prototyping as setting up three PWM pins (and another three just for 'enable' of each phase) is dead easy. Our _"prototyping"_ Pi was our _"Pi on a stick"_ - a Raspberry Pi Zero with USB connector set up to work as ethernet device.
+To start with a homebrew brushless ESC we decided to use a Raspberry Pi for prototyping as setting up three PWM pins (and another three just for 'enable' of each phase) is dead easy. Our _"prototyping"_ Pi was our _"Pi on a stick"_ - a Raspberry Pi Zero with USB connector set up to work as ethernet device.
 
 ![Pi Stick and Brushless Rig](/2018/10/pi-stick-and-brushless-rig.jpg "Pi Stick and Brushless Rig")
 
@@ -127,7 +127,7 @@ All that is needed now is to send PWM to three pins from 3 places from above arr
 
 ![ATmega328p pinout](/2018/10/ATmega328p-pinout.jpg "ATmega328p pinout"){ : style="margin:20px; width:40%; float:left;"}
 
-For a controller that can fit in wheel hub we have chosen ATmega328p - there are enough free pins to cover 6 pins needed for L6234, 6 for nRF24L01 (more about it later) and a few spare for ADC and such. Also, it has three timers (two 8bit and one 16bit) all with two PWM outputs. Two eight bit timers with their corresponding PWM outputs work perfectly in this situation. Remaining 16 bit timer can be, then, used for internal timing.
+For a controller that can fit in wheel hub we have chosen the ATmega328p - there are enough free pins to cover 6 pins needed for L6234, 6 for nRF24L01 (more about it later) and a few spare for ADC and such. Also, it has three timers (two 8bit and one 16bit) all with two PWM outputs. Two eight bit timers with their corresponding PWM outputs work perfectly in this situation. Remaining 16 bit timer can be, then, used for internal timing.
 
 ![Controller on breadboard](/2018/10/brushless-controller.jpg "Controller on breadboard")
 
