@@ -24,7 +24,7 @@ we have completed motor holder.
 
 ![Assembling Wheel Part 1](/2018/11/assembling-wheel-1.jpg "Assembling Wheel Part 1")
 
-Now we can add wheel to motor shaft, and put motor holder (without the lid) into wheel hub and then secure all with the lid.
+Now we can add the wheel to the motor shaft, and put the motor holder (without the lid) into wheel hub and then secure all with the lid.
 
 ![Assembling Wheel Part 2](/2018/11/assembling-wheel-2.jpg "Assembling Wheel Part 2")
 
@@ -32,6 +32,6 @@ Next is to add bottom of holder for AS5600 sensor and secure it with a lid. Lid 
 
 ![Assembling Wheel Part 3](/2018/11/assembling-wheel-3.jpg "Assembling Wheel Part 3")
 
-And finally - this is how rover now looks looked from bottom side:
+And finally - this is how rover now looks viewed from the bottom:
 
 ![Rover](/2018/11/assembling-rover-bottom.jpg "Rover")
