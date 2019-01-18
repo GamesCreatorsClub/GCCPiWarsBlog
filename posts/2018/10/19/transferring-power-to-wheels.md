@@ -6,14 +6,16 @@ Background-image: /2018/10/m18-shape-3.jpg
 
 # Transferring Power To Wheels
 
-For wheels to turn (steer) 360º we cannot have wires going directly to motors and get twisted. Original idea was to go with a ready-made slip ring like this:
 ![Slip Ring](/2018/10/slip-ring.png "Slip Ring"){ : style="margin:20px; width:60%; float:right;"}
+For wheels to turn (steer) 360º we cannot have wires going directly to motors and get twisted. Original idea was to go with a ready-made slip ring like this:
 
 It has 6 independent wires were supposed to handle enough current with acceptable resistance but there was one snag: it would need to go directly at the 'Z' axis over the wheel. That wouldn't be an issue if we didn't plan to have absolute positioning which would use AS5600 (digital potentiometer) which requires tiny, button style magnet to occupy exactly the same place - the top of the wheel (wheel arch really) in the dead centre.
 
 ## Alternatives
 
 If we are not able to use ready made slip ring there are other options. One is to make our own or to try to pass power in contactlessly. Third option would be to not allow wheel go more than, let's say, 720º; count turns and 'rewind' back when needed. That would, after all, defeat idea of effortlessly steering with 360º freedom.
+
+<!-- TEASER_END -->
 
 ## Rotary Transformer
 
@@ -31,10 +33,10 @@ So, alternative is to make our own slip ring then. Since top of the wheel is tak
 
 Design is like follow:
 
-![Wheel Hub Design](/2018/10/wheel-hub-design.png "Wheel Hub Design")
+![Wheel Hub Design](/2018/10/wheel-hub-design.png "Wheel Hub Design"){ : style="margin-bottom:20px;margin-top:10px;width:100%;"}
 
 When printed it looks like this:
 
-![Printed Wheel Hub](/2018/10/printed-wheel-hub.jpg "Printed Wheel Hub")
+![Printed Wheel Hub](/2018/10/printed-wheel-hub.jpg "Printed Wheel Hub"){ : style="margin-bottom:20px;margin-top:10px;width:100%;"}
 
 Now, internal tabs are going to be connected to motor controller (H bridge of some kind) for power and to voltage regulator for ATmega controller, nRF24L01 transceiver for communication to RPi and AS5600 as wheel's "rotary encoder" sensor...
