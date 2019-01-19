@@ -1,10 +1,10 @@
-Title: Transferring Power To Wheels II
+Title: Power To Wheels, Part II
 Tags: Home, Blog, power, slip ring, piwars
 Date: 2018-11-10 15:19
 Author: Daniel Sendula
 Background-image: /2018/11/wheel-with-brushes.jpg
 
-# Transferring Power To Wheels II
+# Transferring Power To Wheels, Part II
 
 When copper rings were in place all that was needed is to make gap between two sides of the ring filled in with solder, sanded smooth down and brushes added.
 

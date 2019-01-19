@@ -1,19 +1,19 @@
-Title: Transferring Power To Wheel Part III
+Title: Power To Wheels, Part III
 Tags: Home, Blog, power, slip ring, piwars
 Date: 2018-11-16 19:58
 Author: Daniel Sendula
 Background-image: /2018/11/brushes-1.jpg
 
-# Transferring Power To Wheel Part III
+# Transferring Power To Wheel, Part III
 
 Copper rings around the plastic groove didn't work out - at least soldering a gap between two tabs slotted ends through the gap in the wheel hub. After a few consultations around, Richard suggested using copper wire instead!
 
-![Wires for Ring](/2018/11/wire-rings.jpg "Wires for Ring")
+![Wires for Ring](/2018/11/wire-rings.jpg "Wires for Ring"){ : style="width:100%;"}
 
 The upper side is that 1.5mmm² wire is widely available (and it was so easy walking to shed and getting a few inches) and very easy winding it instead of copper strip. Downside is that barely 3 windings can fit 4.5mm groove and start and they have to be wound at some angle so start and end can fit. Also, they are not flat and on start and end places there was a bulge which affects brushes. At least it is a solution!
 
 ---
-![Dual Brushes](/2018/11/brushes-2.jpg "Dual Brushes")
+![Dual Brushes](/2018/11/brushes-2.jpg "Dual Brushes"){ : style="width:100%;"}
 
 <!-- TEASER_END -->
 
