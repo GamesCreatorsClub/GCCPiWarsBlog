@@ -10,6 +10,8 @@ Now we have sorted out getting power inside of wheel hub - next is to control th
 
 For the  brain behind the controller we have chosen ATmega328p - a well known µController used in Arduinos. Its responsibility here is to the control H bridge using PWM (using 8-bin Timer 0), read from AS5600 using i²c and listens requests from Raspberry Pi - controlling nRF24L01 using SPI interface. 
 
+![Diagram](/2018/12/wheels-diagram.jpg "Diagram"){ : style="width:100%;"}
+
 <!-- TEASER_END -->
 
 ## ATmega328
@@ -39,7 +41,7 @@ ANGLE is going to give us 12-bit (0-4095) absolute angle of the position of the 
 
 ## Bootloader
 
-Also, there's extra benefit to it, too, secret weapon of a sort: in some of previous projects I've created small [ATmega328p bootloader that works over nRF24L01](https://github.com/natdan/AVR-Bootloaders/tree/master/bootloader-nrf2401)! Now, it is really easy to program the ATmega328p (after it was originally flashed with that bootloader) - directly from Raspberry Pi. That bootloader checks one pin and if it is connected to ground it would go directly into the bootloader. If not it will proceed to the uploaded program. 
+Also, there's extra benefit to it, too, secret weapon of a sort: in some of previous projects I've created small [ATmega328p bootloader that works over nRF24L01](https://github.com/natdan/AVR-Bootloaders/tree/master/bootloader-nrf2401) Now, it is really easy to program the ATmega328p (after it was originally flashed with that bootloader) - directly from Raspberry Pi. That bootloader checks one pin and if it is connected to ground it would go directly into the bootloader. If not it will proceed to the uploaded program. 
 
 Our wheels are powered through an unreliable power source we cannot rely that we'll be able to react and move µController to application as quickly as possible. So, bootloader pin has to be set to going to app immediately. So, the last 'ingredient' for the software for ATmega328p was special packet that would 'revert' code to bootloader - invoke bootloader from the application itself. The moment we do so, µController would slip back to bootloader mode and we would be able to upload new version of the software and reset it programmatically.
 
