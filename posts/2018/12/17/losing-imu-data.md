@@ -18,7 +18,7 @@ The system contains an IMU (an LSM9DS1), a sensor which provides acceleration, a
 The positioning system spawns a process to gather data samples. I call this a "Data Pump".
 
 The IMU produces samples at 230.8 Hz. i.e. once every 4.3 milliseconds.
-
+<!-- TEASER_END -->
 ## The Test
 One of the first tests of my positioning system was to move the Pi backwards and forwards a couple of times. Each movement was about 1 metre and it accelerated at about 0.5g.
 
@@ -31,16 +31,16 @@ Here's a few lines of the raw IMU data showing just the acceleration and gryo ou
 
 The IMU outputs are 16 bit signed integers. You can see this clearly in the acclerations for the z axis (Az). The full range of the accelerometer is 2g so 16384 represents 1g. 
 
-| Sample | Ax   | Ay   | Az    | Gx  | Gy  | Gz   | dt   |
-|--------|------|------|-------|-----|-----|------|------|
-| 1      | -227 | -149 | 16318 | -6  | -65 | -127 | 2.30 |
-| 2      | -228 | -150 | 16359 | -13 | -70 | -128 | 6.94 |
-| 3      | -228 | -150 | 16359 | -13 | -70 | -128 | 2.33 |
-| 4      | -244 | -147 | 16356 | -3  | -50 | -125 | 2.51 |
-| 5      | -230 | -139 | 16355 | -14 | -55 | -121 | 6.94 |
-| 6      | -230 | -139 | 16355 | -8  | -70 | -119 | 2.34 |
-| 7      | -242 | -154 | 16340 | -2  | -51 | -114 | 6.92 |
-| 8      | -242 | -154 | 16340 | -2  | -51 | -114 | 2.30 |
+| Sample |   Ax    | Ay    | Az     | Gx   | Gy   | Gz    | dt    |
+|--------|--------:|------:|-------:|-----:|-----:|------:|------:|
+| 1      |   -227  |  -149 |  16318 |  -6  |  -65 |  -127 |  2.30 |
+| 2      |   -228  |  -150 |  16359 |  -13 |  -70 |  -128 |  6.94 |
+| 3      |   -228  |  -150 |  16359 |  -13 |  -70 |  -128 |  2.33 |
+| 4      |   -244  |  -147 |  16356 |  -3  |  -50 |  -125 |  2.51 |
+| 5      |   -230  |  -139 |  16355 |  -14 |  -55 |  -121 |  6.94 |
+| 6      |   -230  |  -139 |  16355 |  -8  |  -70 |  -119 |  2.34 |
+| 7      |   -242  |  -154 |  16340 |  -2  |  -51 |  -114 |  6.92 |
+| 8      |   -242  |  -154 |  16340 |  -2  |  -51 |  -114 |  2.30 |
 
 If you look at lines 2 and 3 you can see that the data is identical. The same thing happens with lines 7 and 8. Given that these measurements are noisy it's vastly improbable that this happens at all, let alone twice in 8 samples. Those 8 lines are typical of the whole data set. In other words, at least 1/4 of my data points were invalid.
 
@@ -71,11 +71,11 @@ One big surprise was the sample rate. According to the data sheet it should have
 
 The time between samples looked better but not perfect. As you can see from this graph the time between samples was usually 4.3 milliseconds but was sometimes so high that the Data Pump must have lost samples.
 
-![alt text](/2018/12/lost_samples.png "Time Between Samples Showing Missing Data") 
+![alt text](/2018/12/lost_samples.png "Time Between Samples Showing Missing Data"){ : style="width:100%;"}
 
 For reasons I didn't understand at the time, the CPU load on the positioning system and Data Pump would often double. (I later discovered that this was caused by the Pi throttling the CPU when it detected a low voltage condition on the power input.) I also wanted to be able to record data and run diagnostics while the system was running without affecting it so I decided to stress the system by turning on all my diagnostics and logging. The results were not pretty!
 
-![alt text](/2018/12/very_bad.png "Significant Data Loss Under Load")
+![alt text](/2018/12/very_bad.png "Significant Data Loss Under Load"){ : style="width:100%;"}
 
 If you check the scale you can see that in some cases it took more than 100 milliseconds to get a sample. In other words, the Data Pump must have lost about 20 samples. The scale of data loss is reflected in the average sample frequency which has dropped to 132 Hz. This is clearly not good enough.
 
