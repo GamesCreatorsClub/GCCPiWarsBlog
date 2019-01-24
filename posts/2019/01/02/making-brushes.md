@@ -12,6 +12,8 @@ So geared with that idea we came with a solution: a tool that can help us shape 
 
 ![Making a Brush](/2019/01/making-a-brush.jpg "Brush Tool"){ : style="width:100%;"}
 
+<!-- TEASER_END -->
+
 There are 4 inner brushes and 4 outer brushes. Each wheel has two brushes - in case one at one portion of copper ring doesn't have appropriate connection other would 'take over':
 
 ![Making Brushes](/2019/01/making-brushes.jpg "Making Brushes"){ : style="width:100%;"}
