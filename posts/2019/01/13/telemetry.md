@@ -6,7 +6,7 @@ Background-image: /2019/01/telemetry-diagram-1.png
 
 # Telemetry
 
-There are a few ways developing your code on Raspberry Pis for PiWars:
+There are a few ways of developing your code on Raspberry Pis for PiWars:
 - write your code on Raspberry Pi using monitor and keyboard attached to the RPi
 - write your code on Raspberry Pi using ssh
 - write your code on Raspberry Pi using X11 tunnelled back to your computer/laptop's X11 Terminal (client program)
@@ -26,15 +26,15 @@ This would be an example how to upload new version of 'service' wheels (python f
 $ pyros myrover log wheels
 ```
 
-But, all those predicate you use `print` statements in Python to log what is going on with you code. In case (as it is ours) we have a few loops running at significant speeds (over 200Hz) gathering data (from AS5600 for wheel orientation, accelerometer, gyroscope and compass from IMU and such). Just imagine amount of text printed out all the time to stdout. Also, as PyROS is utilising MQTT for communication between processes (and shell commands as above) it would make output really big and 'clog' network throughput. Additional problem is that not all output is coming from the same PyROS 'service' (an unix process maintained by PyROS) - so you would need to simultaneously monitor several process logs.
+But, all those predicate you use `print` statements in Python to log what is going on with you code. In case (as it is ours) we have a few loops running at significant speeds (over 200Hz) gathering data (from AS5600 for wheel orientation, accelerometer, gyroscope and compass from IMU and such). Just imagine the amount of text printed out all the time to stdout. Also, as PyROS utilises MQTT for communication between processes (and shell commands as above) it would make output really big and 'clog' network throughput. Additional problem is that not all output is coming from the same PyROS 'service' (an unix process maintained by PyROS) - so you would need to simultaneously monitor several process logs.
 
 
 ## Requirements
 
-One option would be to write log files. But, then, how far you can go with writing to SD card? It has limited throughput as well. Then you would create several files, which would need to be downloaded after the run and analysed in parallel. Not an easy job. All of this lead us to decide to create simple data gathering system - a simple telemetry library!
+One option would be to write to log files. But, then, how far you can go with writing to SD card? It has limited throughput as well. Then you would create several files, which would need to be downloaded after the run and analysed in parallel. Not an easy job. All of this lead us to decide to create simple data gathering system - a simple telemetry library!
 
 Ideas were like following:
-- ability to define structure of data
+- ability to define the structure of data
 - ability to 'pump' larger amounts of structured data to the logging system
 - ability to fetch data on demand from client/analysing software
 - nice to have: ability to produce aggregate of gathered data for real time telemetry
@@ -47,11 +47,11 @@ So, here it is - small side project of Games Creators Club: [GCC-Telemetry](http
 
 ![Telemetry Diagram](/2019/01/telemetry-diagram-1.png "Telemetry Diagram"){ : style="width:70%;"}
 
-This is high level overview how GCC-Telemetry works: each process has two 'channels' of communication to central 'telemetry' service. One is 'general', low bandwidth used for setting up a 'stream' of data (stream of records of same type) and one is as fast as we can devise - an unix pipe to log data. Second channel is supposed to be as quick and as unobtrusive to system as possible. It would be unfair for rest of the system to suffer from a few services dumping larger amounts of data to the centra place (telemetry service). Unix pipes seem to be one of the fastest means of interprocess communication - especially if shared memory is not easy option due to several processes needed same service. Local sockets seem to be ever so slightly slower and still are kept as a 'Plan-B', a fallback solution in case it is needed. Also, sockets would work across more Raspberry Pis, too.
+This is high level overview how GCC-Telemetry works: each process has two 'channels' of communication to central 'telemetry' service. One is 'general', low bandwidth used for setting up a 'stream' of data (stream of records of same type) and one is as fast as we can devise - an unix pipe to log data. Second channel is supposed to be as quick and unobtrusive to the system as possible. It would be unfair for rest of the system to suffer from a few services dumping larger amounts of data to the centra place (telemetry service). Unix pipes seem to be one of the fastest means of interprocess communication - especially if shared memory is not easy option due to several processes needed same service. Local sockets seem to be ever so slightly slower and still are kept as a 'Plan-B', a fallback solution in case it is needed. Also, sockets would work across more Raspberry Pis, too.
 
-Telemetry service, then collects all the log records thrown at it and stores them in memory. Since most of PiWar challenges last around 10min max (600 seconds) and if we extrapolate amount of data to example of 200Hz feed or 20-ish float point numbers (double precision - 8 bytes long) each record would be 160bytes x 200 times a second x 600 seconds ~= 18MB - amount of memory we can sacrifice for logging. PiZero is quite tight with memory but 50-100MB (in the worst possible case) is something that can be put aside for logging if really needed. Downside of keeping all in memory is losing data in case of process dying or PiZero browns out before data is extracted. There's still option of storing that data slowly (for example at half the SD I/O throughput) to SD card, but it is not implemented. Yet.
+The telemetry service, then collects all the log records thrown at it and stores them in the memory. Since most of the PiWars challenges last around 10min max (600 seconds) and if we extrapolate amount of data to example of 200Hz feed or 20-ish float point numbers (double precision - 8 bytes long) each record would be 160bytes x 200 times a second x 600 seconds ~= 18MB - amount of memory we can sacrifice for logging. PiZero is quite tight with memory but 50-100MB (in the worst possible case) is something that can be put aside for logging if really needed. The downside of keeping it all in memory is losing data in case of a process dying or PiZero browns out before data is extracted. There's still option of storing that data slowly (for example at half the SD I/O throughput) to SD card, but it is not implemented. Yet.
 
-Last piece of puzzle is client that, then, can request data when convenient (and won't affect finely tuned software and sensor processing) - at the end of the run or trickling data through the run. Client would use MQTT (as rest of the PyROS architecture) and fetch each stream of data to local memory and do something with it. 
+The last piece of the puzzle is a client that can request data when convenient (and won't affect finely tuned software and sensor processing) - at the end of the run or trickling data through the run. Client would use MQTT (as rest of the PyROS architecture) and fetch each stream of data to local memory and do something with it. 
 
 ### Stream
 
@@ -141,10 +141,10 @@ Methods are:
 - `trim(stream, to_timestamp)` - removing all logs older than given timestamp
 - `retrieve(stream, from_timestamp, to_timestmap, callback)` - retrieving all records from given timestamp older than `to_timestamp`
 
-As you can see all methods have callback method that is going to be invoked when data from the server are ready. Example is in [`download-stream`](https://github.com/GamesCreatorsClub/GCC-Telemetry/blob/master/telemetry-client/download-stream.py) - a utility that downloads particular stream from the server into a file. You can choose byte representation or CSV (human readable) representation. 
+As you can see all methods have a callback method that is going to be invoked when data from the server are ready. An example is in [`download-stream`](https://github.com/GamesCreatorsClub/GCC-Telemetry/blob/master/telemetry-client/download-stream.py) - a utility that downloads particular stream from the server into a file. You can choose byte representation or CSV (human readable) representation. 
 
 ## Conclusion
 
-Python is OO programming language (Object Oriented) it was quite easy to make simple logging system. Also, [`struct'](https://docs.python.org/3/library/struct.html) built package allowed bandwidth reduction of logged data (in comparison to ASCII representation) as all numbers can be packed as bytes, words, integers, longs, floats and doubles (as as unsigned as well) allowing smaller memory footprint. After all - it was quite a fun playing with code for this small library.
+Python is OO programming language (Object Oriented) it was quite easy to make a simple logging system. Also, [`struct'](https://docs.python.org/3/library/struct.html) built package allowed bandwidth reduction of logged data (in comparison to ASCII representation) as all numbers can be packed as bytes, words, integers, longs, floats and doubles (as unsigned as well) allowing a smaller memory footprint. After all - it was quite a fun playing with code for this small library.
 
-Currently main implementation is over MQTT (which PyROS heavily relies on) and UNIX Pipes. It is now quite easy to extend it for logging to happen over IP sockets (for logging over different machines); replacing MQTT with some custom implementation that can go over same sockets; add REST implementation for low bandwidth communication and such...
+Currently the main implementation is over MQTT (which PyROS heavily relies on) and UNIX Pipes. It is now quite easy to extend it for logging to happen over IP sockets (for logging over different machines); replacing MQTT with some custom implementation that can go over same sockets; add REST implementation for low bandwidth communication and such...
