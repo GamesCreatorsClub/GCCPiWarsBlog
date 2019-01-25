@@ -4,16 +4,16 @@ Date: 2019-01-14 20:57
 Author: Daniel Sendula
 Background-image: /2019/01/we-have-a-movement.jpg
 
-# We Have A Movement
+# We Have Movement
 
 
 {{% media url="https://www.youtube.com/watch?v=NZeGPYGKcpU" %}}
 
 <!-- TEASER_END -->
 
-Finally some breakthrough. Rover is now fully drivable. But that wasn't straight forward journey. And the last let involved updating/fixing `drive` and `wheel` services.
+Finally some breakthrough. The rover is now fully drivable. But that wasn't a straight forward journey. And the last let involved updating/fixing `drive` and `wheel` services.
 
-The `wheel` service is responsible for steering individual wheels and driving wheels. Original code for rover M16 (with nickname 'type a' or 'type b') was driving wheels using servo signal through servoblaster daemon. This version (nicknamed 'type c') has completely different mode of delivering signals to wheels.
+The `wheel` service is responsible for steering individual wheels and driving wheels. Original code for rover M16 (with nickname 'type a' or 'type b') drove wheels using a servo signal through servoblaster daemon. This version (nicknamed 'type c') has completely different mode of delivering signals to wheels.
 
 ## Steering
 
@@ -63,4 +63,4 @@ And one more thing - it is never too much when you are cautious with LiPo batter
 
 ![Wiring](/2019/01/fuse.jpg "Wiring"){ : style="width:100%;"}
 
-Main reason for it is custom wiring. In case there is any short of any kind, and power source for RPi is connected to battery directly, along with distribution wires for H bridges that steer wheels and last but not least slip rings and brushes that transfer power to wheel hubs. Any of those along with connections can potentially cause a short. And LiPo batteries can deliver quite a high current burning wires, but what's even worse - internally as well making them hot to the point they can explode. So, as it is "better safe than sorry" our rovers are protected with car fuses. Now, it is on us to measure total current rover normally pulls and provide appropriate fuse size. Currently we have only 5A...
+The main reason for it is custom wiring. In case there is a short of any kind, and power source for RPi is connected to battery directly, along with distribution wires for H bridges that steer wheels and last but not least slip rings and brushes that transfer power to wheel hubs. Any of those along with connections can potentially cause a short. And LiPo batteries can deliver quite a high current burning wires, but what's even worse - internally as well making them hot to the point they can explode. So, as it is "better safe than sorry" our rovers are protected with car fuses. Now, it is on us to measure total current rover normally pulls and provide appropriate fuse size. Currently we only have 5A...
