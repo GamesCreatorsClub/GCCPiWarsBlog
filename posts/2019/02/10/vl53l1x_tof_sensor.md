@@ -10,11 +10,13 @@ Background-image: /2019/01/we-have-a-movement.jpg
 ## Introduction
 "Time of Flight" sensors are laser range finders. There are several that are available on breakout boards. We're using the VL53L1X made by [ST Microelectronics](https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html) for detecting walls. The breakout board we're using is provided by [Pololu](https://www.pololu.com/product/3415).
 
-![VL53L1X from Pololu](https://a.pololu-files.com/picture/0J8679.1200.jpg?01e3896017fbf0b3c22e42e0964e0570)
+![VL53L1X from Pololu](https://a.pololu-files.com/picture/0J8679.1200.jpg?01e3896017fbf0b3c22e42e0964e0570){ : style="width:100%;"}
 
 The [Pololu](https://www.pololu.com/product/3415) product page provides a good overview of the sensor. It also provides links to datasheets. This blog post contains the notes I made whilst testing the sensor. I won't repeat information you can find in the datasheet.
 
 This information is not definitive. It's just my impressions from testing a sensor for a few days.
+
+<!-- TEASER_END -->
 
 ## Effective Ranges
 | Distance Mode | Min (mm) | Max (mm)  | Max Sunlight (mm) |
