@@ -11,10 +11,11 @@ assumes that one i²c on a separate PiZero is to read 4 x AS5600 magnetic sensor
 worked well - sensors were read at an approximate frequency of 250 Hz. As there are four wheels (four AS5600 magnetic sensors) for each wheel it equates to controlling it 60-ish times a second. 
 
 But, as soon as we connected VL53L1X sensors frequency dropped to 10 times a second per wheel. It seems that VL53L1X is quite chatty (seen through its driver) and it swamps i²c bus for setting up ranging and reading results. Even when we wait the appropriate time and get to read after ranging is done!
-
 ## Solution
 
 ![Two Raspberry Pis](/2019/01/rpi3-pi0.png "Two Raspberry Pis"){ : style="width:100%;"}
+
+<!-- TEASER_END -->
 
 Driving wheels at 10 Hz is not really an option and we have two Raspberry Pis at our disposal: PiZero for motors and RPi3B+ for everything else. Since there's nothing else to be read from i²c on RPi3B+ we can just redesign i²c multiplexer board and introduce another i²c multiplexer for VL53L1X chips only. This way we'll use one PCA9545A for AS5600 connected to PiZero's i²c bus for As5600 magnetic sensors and one PCA9545A attached to RPi3B+'s i²c to read from VL53L1X.
 
