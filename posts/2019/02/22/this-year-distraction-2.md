@@ -6,13 +6,13 @@ Background-image: /2019/02/screen-status-data-collection-washed-out.png
 
 # This Year's Distraction - Part II - Power
 
-The moment we started doing some autonomous challenges code, rover was powered by battery and problem with LiPo batteries, if someone wants to maintain their life, is that they shouldn't be over-discharged. And, since we still don't have way of checking battery's voltage, nor measuring current through it, there are couple of other ways to fudge it in the meantime:
+The moment we started doing some autonomous challenges code, the rover was powered by battery and problem with LiPo batteries, if someone wants to maintain their life, is that they shouldn't be over-discharged. And, since we still don't have way of checking battery's voltage, nor measuring current through it, there are couple of other ways to fudge it in the meantime:
 - measure time since battery was put in rover (read 'uptime' functionality of linux)
 - measure 'idle' current through components separately (Raspberry Pis - both RPi3B+ and PiZero and rest of the system in resting state) and then measure current when motors are driven at 100% PWM. It is easy for steering as current would be similar in case of rover going around and when on the bench, but for main wheels it is bit trickier. So we decided to 'eyeball' what it might be (somewhere between stall current and freewheeling). We do it for one wheel only...
 
 <!-- TEASER_END -->
 
-After a session with Amp meter results are like following:
+After a session with an Ammeter, the results are like following:
 
 |  |  |
 |--|--|
@@ -55,4 +55,4 @@ Or if both front sensors detect points that are much further than wall lines (as
 
 ![Maze](/2019/02/maze-3.gif "Maze"){ : style="width:100%;"}
 
-In all of these examples back wall is drawn perpendicular to the right wall. Component is just another extension of `Component` class with specific for this case. Also, 'connected', 'Run' and 'Stop' buttons are yet another component that encapsulates state of current agent - when it is running the component hides 'Run' button(s) (as there might be more buttons)...
+In all of these examples the back wall is drawn perpendicular to the right wall. Component is just another extension of `Component` class with specific for this case. Also, 'connected', 'Run' and 'Stop' buttons are yet another component that encapsulates state of current agent - when it is running the component hides 'Run' button(s) (as there might be more buttons)...

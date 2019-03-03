@@ -38,7 +38,7 @@ $ sudo apt-get install flite
 $ flite "Hello!"
 ```
 
-But original voice wasn't the best of all. A bit more internet searches and trying out various things produced nice, slightly disconnected - even bored, female voice called 'eey' from here: [http://www.festvox.org/flite/packed/flite-2.0/voices/](http://www.festvox.org/flite/packed/flite-2.0/voices/) ([http://www.festvox.org/flite/packed/flite-2.0/voices/cmu_us_eey.flitevox](http://www.festvox.org/flite/packed/flite-2.0/voices/cmu_us_eey.flitevox))
+But original voice wasn't the best. A bit more internet searches and trying out various things produced nice, slightly disconnected - even bored, female voice called 'eey' from here: [http://www.festvox.org/flite/packed/flite-2.0/voices/](http://www.festvox.org/flite/packed/flite-2.0/voices/) ([http://www.festvox.org/flite/packed/flite-2.0/voices/cmu_us_eey.flitevox](http://www.festvox.org/flite/packed/flite-2.0/voices/cmu_us_eey.flitevox))
 
 ```shell
 $ flite -v -voice /home/pi/cmu_us_eey.flitevox "Shutdown initiated"

@@ -15,7 +15,7 @@ This year we continue with last year's theme: SciFi UI! Reason more is that this
 
 ## Requirements
 
-Touch screen on rover is something new for us. So, what it can be used for?
+A touch screen on our rover is something new for us. So, what can it be used for?
 
 * display some status info:
     * wheel positions
@@ -124,7 +124,7 @@ It shows positions of all wheels, odometer and wheel statuses (errors like trans
 
 ![Radar](/2019/02/screen-radar.png "Radar"){ : style="width:35%; display: block; margin-left: auto; margin-right: auto;"}
 
-Another special component that renders radar from 8 distance sensors.
+Another special component that renders the radar from 8 distance sensors.
 
 ### Calibrate Wheels
 
@@ -138,4 +138,4 @@ Screen that allows selection of wheel to be calibrated and then defining its ori
 
 Screen that allows calibration of PID algorithm for steering wheels.
 
-(*) Note: All pictures are screen shot of application that runs on the client (a laptop), but exactly the same is rendered on 320x480 screen of the rover (minus border and top bar with rover selection and GCC logo)
+(*) Note: All pictures are screenshots of an application that runs on the client (a laptop), but exactly the same is rendered on the 320x480 screen of the rover (minus border and top bar with rover selection and GCC logo)
