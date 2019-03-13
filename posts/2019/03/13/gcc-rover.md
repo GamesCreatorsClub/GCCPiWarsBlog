@@ -6,15 +6,15 @@ Background-image: /2019/03/new-coat-white.jpg
 
 # GCC Rover
 
-As this can be last post before blogging competition is closed let's use this opportunity to describe how far we managed to go with our rover and maybe mention how far more we would like (probably for the next year).
+As this can be last post before the blogging competition is closed let's use this opportunity to describe how far we managed to go with our rover and maybe mention how far more we would like (probably for the next year).
 
 But before that is very important to say that this journey was really interesting and fun. And hard and frustrating at moments. But it was worth it!
 
 <!-- TEASER_END -->
 
-## GCC Rover M18 akka 'Plan B'
+## GCC Rover M18 aka 'Plan B'
 
-As 'name' suggests it was mostly composed with 'Plan-B' options and solutions. It really forced us to think on our feed and make hard decisions. At the same time - all those second best options we were forced to pick are really perfect points for improvements, especially now when we have 'working solution'.
+As the 'name' suggests it was mostly composed with 'Plan-B' options and solutions. It really forced us to think on our feed and make hard decisions. At the same time - all those second best options we were forced to pick are really perfect points for improvements, especially now when we have 'working solution'.
 
 ## First Tier - Wheels
 
@@ -41,15 +41,15 @@ Aside of little motors there is space in the middle of the rover for the LiPo ba
 
 ## Middle Tier
 
-Middle tear has two dual H bridges on the bottom side which are connected with micro deans connectors to steering motors. Also, middle tear plate has hole, just below main Raspberry Pi, pretty much in the centre of the rover, where commanding nRF24L01 24.GHz transceiver is mounted.
+Middle tear has two dual H bridges on the bottom side which are connected with micro deans connectors to steering motors. Also, middle tear plate has hole, just below the main Raspberry Pi, pretty much in the centre of the rover, where the commanding nRF24L01 24.GHz transceiver is mounted.
 
 ![Middle Tier Bottom](/2019/03/M18-Plan-B-4.jpg "Middle Tier Bottom"){ : style="width:100%;"}
 
-Next important thing on that tier are 4 AS5600 rotational sensors, one over each wheel hub. They report back position of each wheel hub. At the top of the wheel hubs are tiny magnets which are read by those sensors.
+The next important thing on that tier are 4 AS5600 rotational sensors, one over each wheel hub. They report back position of each wheel hub. At the top of the wheel hubs are tiny magnets which are read by those sensors.
 
 ![Steering Sensors](/2019/03/M18-Plan-B-5.jpg "Steering Sensors"){ : style="width:100%;"}
 
-On this tier we have main Raspberry Pi, 3B+ (with heat sink!) and satellite Raspberry Pi Zero which is charge of steering wheels and communicating with µControllers in side of wheel hubs. Next to them is DC-2-DC power supply of stable 5V for Raspberry Pies and other sensors and a board for various i²c devices (as explained [here](/2019/12/10/i2c-multiplexer) and [here](/2019/02/12/another-setback.md)). Main Raspberry Pi and Pi Zero are connected through USB cable.
+On this tier we have the main Raspberry Pi, 3B+ (with heat sink!) and satellite Raspberry Pi Zero which is charge of steering wheels and communicating with µControllers in side of wheel hubs. Next to them is DC-2-DC power supply of stable 5V for Raspberry Pies and other sensors and a board for various i²c devices (as explained [here](/2019/12/10/i2c-multiplexer) and [here](/2019/02/12/another-setback.md)). Main Raspberry Pi and Pi Zero are connected through USB cable.
 
 ![Middle Tier Top](/2019/03/M18-Plan-B-6.jpg "Middle Tier Top"){ : style="width:100%;"}
 
@@ -92,5 +92,5 @@ On satellite Pi Zero we have following services running:
 - telemetry service - local telemetry service to store telemetry data in local memory
 - wheels service - service that steers wheels driving H bridges and reading AS5600 rotational sensors using PID algorithm. Also, same service is responsible to talk to master nRF24L01 2.4GHz transceiver to talk to wheel hubs' µControllers - sending them required speed and reading current position of wheels (odometers)
 
-Same as on main Raspberry Pi we have pyroslib and storagelib provided to satellite pi.
+Same as on the main Raspberry Pi we have pyroslib and storagelib provided to the satellite pi.
 
