@@ -138,4 +138,6 @@ Screen that allows selection of wheel to be calibrated and then defining its ori
 
 Screen that allows calibration of PID algorithm for steering wheels.
 
-(*) Note: All pictures are screenshots of an application that runs on the client (a laptop), but exactly the same is rendered on the 320x480 screen of the rover (minus border and top bar with rover selection and GCC logo)
+| |
+| --- |
+| Note: (*) All pictures are screenshots of an application that runs on the client (a laptop), but exactly the same is rendered on the 320x480 screen of the rover (minus border and top bar with rover selection and GCC logo) |
