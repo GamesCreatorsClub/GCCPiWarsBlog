@@ -6,7 +6,7 @@ Background-image: /2019/03/opengraph-icon-200x200.png
 
 # Python Comprehensions
 
-Where were many posts how with pictures. Let's have one with some code.
+Wev've had many posts that were mainly pictures; let's have one with some code!
 
 Over last couple of months I've got impression that some people do not regard Python as good, modern language (well it has some of the history to make some people stop and think). As any language it has its good and bad sides along with where it can be used as a really good choice and where maybe not.
 
