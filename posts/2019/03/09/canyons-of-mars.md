@@ -6,7 +6,7 @@ Background-image: /2019/03/canyons-of-mars.jpg
 
 # Canyons Of Mars
 
-_"Slow and steady wins the race"_ - Not sure about that. But at least allows for _*finishing* the race_...
+_"Slow and steady wins the race"_ - Not sure about that, but at least we can go for _*finishing* the race_...
 
 {{% media url="https://youtu.be/kC5oLYV1AOY" %}}
 
@@ -38,4 +38,4 @@ Arc length is r * Θ and using Euclidean geometry we can prove from above pictur
 
 And `length of arch` is really speed our rover is travelling. 
 
-Now by combing distance of point we want rover to steer and angle we want rover to deflect from the wall (if it is too close or get closer if it is too far) we can get really smooth auto correction as what you can see in the video...
+Now by the combing distance of point we want rover to steer and angle we want rover to deflect from the wall (if it is too close or get closer if it is too far) we can get really smooth auto correction as what you can see in the video...
