@@ -6,7 +6,7 @@ Background-image: /2019/03/new-coat-white.jpg
 
 # Rover's Photo Shoot
 
-3D printing is still not as robust process as printing on paper. We tried to push creating Rover's body for the PiWars Programme but printer just couldn't do it. Main problem was one extruder being weak (original Kickstarted extruder) and after that bowden tubes being of 'wrong' size and hang down ruining print ([known problem](https://www.cel-uk.com/community/technical-support/flat-cable-and-bowden-tube-catching-print/#post-750) of Robox printer) when print is tall enough.
+3D printing is still not as robust process as printing on paper. We tried to push creating Rover's body for the PiWars Programme but the printer just couldn't do it. Main problem was one extruder being weak (original Kickstarted extruder) and after that bowden tubes being of 'wrong' size and hang down ruining print ([known problem](https://www.cel-uk.com/community/technical-support/flat-cable-and-bowden-tube-catching-print/#post-750) of Robox printer) when print is tall enough.
 
 Many hours later, printer stripped bare, 2 new set of bowden tubes created, weak extruder replaced and we are back in the game of 3D printing. Now only 3D printing - but dual material 3D printing...
 
@@ -17,9 +17,9 @@ Many hours later, printer stripped bare, 2 new set of bowden tubes created, weak
 
 <!-- TEASER_END -->
 
-Design itself was something of a challenge. First was measuring not only design of rover's chassis to middle tier and then to top face, but what tolerances we need to add so when all is assembled fits the reality where different half millimetre here and full millimetre there do add up.
+Design itself was something of a challenge. First was measuring not only the design of rover's chassis to middle tier and then to top face, but what tolerances we need to add so when all is assembled fits the reality where different half millimetre here and full millimetre there do add up.
 
-Body is made of two sides so they can be put on the rover - clamped on it.
+The body is made of two sides so they can be put on the rover - clamped on it.
 
 ![Rover's Body Design Half](/2019/03/rovers-shell-half.png "Rover's Body Design Half"){ : style="width:100%;"}
 
