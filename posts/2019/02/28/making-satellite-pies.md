@@ -16,7 +16,7 @@ When processor is taxed a lot, heat would be trapped between these two and slowl
 
 ## High Temperature and How to Fight It
 
-Observations provided us with fact that CPU doesn't really hits those temperatures immediately but over course of 5
+Observations provided us with the fact that the CPU doesn't really hit those temperatures immediately but over course of 5
 10 to 15 minutes or more depending on ambient temperature. So, not everything was lost.
 
 First idea was to try to add small fan which would fit in. Something like this: 
@@ -41,9 +41,9 @@ With all improvements in the code we ended up with CPU usage when rover is idle 
 
 ## First Breakdown
 
-And inevitable happened. While trying to implement following 'right wall' one of the wheels started reporting overheating protection kicking in (*). Closer inspection showed it was slower to steer than others and producing a noise that by any terms didn't sound right. It warranted nothing less but slowly taking things apart and finding out what is causing it. Worst worries were that it is one of second hand, expensive, really heavy, bearings that finally gave.
+And the inevitable happened. While trying to implement following 'right wall' one of the wheels started reporting overheating protection kicking in (*). Closer inspection showed it was slower to steer than others and producing a noise that by any terms didn't sound right. It warranted nothing less but slowly taking things apart and finding out what is causing it. Worst worries were that it is one of second hand, expensive, really heavy, bearings that finally gave.
 
-Taking wheel apart prompted another though - designing with repairability in mind. It turns out that all the wheels are assembled from the top, then middle platform added, then many other things piled on the middle platform - so getting to the wheels requires taking top platform off (which itself is not an issue), taking many wires off (which is an issue), taking PiZero off so we can take main Raspberry Pi off just go get to screws to get the top platform off. Had those screws were on each side of main Raspberry Pi it would require no dissembling of middle platform. Then, when top platform is off - there's only power supply that needs to be disconnected (and that's only positive thing). After that, we can access wheel insides from the top... But, had we had that in mind designing wheel hubs, main screws to take inner ports of the wheel out would have been at the bottom and one would be able to take the wheel stuff just by flipping rover up side down and taking wheel hub apart.
+Taking the wheel apart prompted another though - designing with repairability in mind. It turns out that all the wheels are assembled from the top, then middle platform added, then many other things piled on the middle platform - so getting to the wheels requires taking top platform off (which itself is not an issue), taking many wires off (which is an issue), taking PiZero off so we can take main Raspberry Pi off just go get to screws to get the top platform off. Had those screws were on each side of main Raspberry Pi it would require no dissembling of middle platform. Then, when top platform is off - there's only power supply that needs to be disconnected (and that's only positive thing). After that, we can access wheel insides from the top... But, had we had that in mind designing the wheel hubs, main screws to take inner ports of the wheel out would have been at the bottom and one would be able to take the wheel stuff just by flipping rover up side down and taking the wheel hub apart.
 
 However - there was nothing wrong with the wheel hub itself. After checking how brushes push whole wheel with bearing to 'outside' it turned out that outside clamp was the one that caused all the issues - wheel hub started rubbing inside of the clamp:
 
@@ -62,4 +62,4 @@ BTW this is what clamp (double one) is designed as:
 
 ### Problem Sorted
 
-Fortunately it is just a couple of hours or printing (if that much) which solved the problem. Interesting thing is that the new print has similar error but far less announced.
+Fortunately it is just a couple of hours of printing (if that much) which solved the problem. Interesting thing is that the new print has a similar error but far less announced.
