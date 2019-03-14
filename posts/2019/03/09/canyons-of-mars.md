@@ -34,6 +34,7 @@ Anyway - one way to solve it is given on this picture:
 ![Math Solution](/2019/03/math-problem-2.png "Math Solution"){ : style="width:100%;"}
 
 Arc length is r * Θ and using Euclidean geometry we can prove from above picture that Θ is really same as 𝝰. From there it is easy:
+
 `length of arch = r * Θ = r * 𝝰   =>   r = length of arc / 𝝰`
 
 And `length of arch` is really speed our rover is travelling. 
